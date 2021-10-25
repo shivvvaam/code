@@ -1,6 +1,7 @@
 package io.javabrains.ipldashboard.controller;
 
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 //import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,6 +12,7 @@ import io.javabrains.ipldashboard.repository.MatchRepository;
 import io.javabrains.ipldashboard.repository.TeamRepository;
 
 @RestController
+@CrossOrigin
 public class TeamController {
     
     private TeamRepository teamRepository;
